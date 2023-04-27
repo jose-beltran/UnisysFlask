@@ -1,0 +1,19 @@
+{% extends './layout.html' %}
+
+{% block title %}{{ data.titulo }}{% endblock %}
+
+{% block body %}
+{% include './header.html' %}
+<div class="img">
+
+    <img src="{{ url_for('static', filename='img/unisys.png') }}" width="70%">
+
+</div>
+<div class="texto">
+    <p>Plataforma de documentación</p>
+    <p>de incidentes </p>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+{% endblock %}

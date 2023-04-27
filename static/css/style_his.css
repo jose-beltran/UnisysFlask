@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #003135;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo {
+    font-size: 70px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100px;
+    height: 90px;
+}
+
+.bars {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar ul li a {
+
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 100px;
+    border-radius: 15px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: #212127;
+    background-color: #04D976;
+
+}
+
+.nav-bar ul li a:active {
+    color: #212127;
+    background-color: #26BF87;
+}
+
+@media(max-width:900px) {
+    header {
+        padding: 0px 30px;
+    }
+
+    .bars {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bars .line {
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 6px 0px;
+    }
+
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #1e3b3d;
+        filter: blur(100);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 20px;
+    }
+}
+
+.texto{
+    margin: 60px auto auto 630px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 10px;
+    width: 550px;
+    height: 60px;
+}

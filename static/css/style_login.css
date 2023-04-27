@@ -1,0 +1,37 @@
+head, body {
+    background-color: #003135;
+}
+
+.texto{
+    margin: 300px auto auto 640px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: 10px;
+    font-weight: bold;
+    width: 450px;
+    height: 60px;
+}
+
+input{
+    margin: 30px auto auto 700px;
+    width: 300px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: unset;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button {
+    margin: 40px auto auto 580px;
+    width: 550px;
+    height: 60px;
+    border-radius: 15px;
+    background-color:  #22ff98e5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}

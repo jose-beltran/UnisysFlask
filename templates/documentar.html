@@ -1,0 +1,61 @@
+{% extends './layout.html' %}
+
+{% block title %}{{ data.titulo }}{% endblock %}
+
+{% block body %}
+{% include './header.html' %}
+<div class="texto">
+    <p>Documentar Caso</p>
+</div>
+<div class="div-botones">
+    <select name="lenguajes" id="selectPlantilla" class="select">
+        <option value="default" id="default">Selecciona Plantilla</option>
+        <option value="datos" id="datos">Datos básicos</option>
+        <option value="golf" id="golf">Golf</option>
+        <option value="hclient" id="hclient">Hclient/Biometría</option>
+        <option value="lotus" id="lotus">Lotus</option>
+        <option value="as400" id="as400">Mas de un dispositivo (As400)</option>
+        <option value="mult" id="mult">Multifuncional</option>
+        <option value="nets" id="nets">Netscaler</option>
+        <option value="office" id="office">Office</option>
+        <option value="noEntregado" id="noEntregado">Producto no entregado</option>
+        <option value="qflow" id="qflow">Qflow</option>
+        <option value="usm" id="usm">Usm</option>
+        <option value="validadora" id="validadora">Validadora</option>
+        <option value="win" id="win">Windows</option>
+        <option value="wiw" id="wiw">Who is Who</option>
+    </select>
+    
+    <select name="lenguajes" id="selectPlantilla2" class="select">
+        <option value="default" id="default">--Vacio--</option>
+    </select>
+    
+    
+    <img id="copy" class="img-copy" src="{{ url_for('static', filename='img/copy.png') }}" alt="copiar" title="Copiar" onclick="guardarContenido()"/>
+    <img id="undo" src="{{ url_for('static', filename='img/flecha.png') }}" class="img-table__return"/>
+
+</div>
+
+
+<div>
+    <textarea class="textarea" id="textPlantilla">
+Incidente: Colaborador/a informa que 
+• Error:
+• Usuario de red:
+• Equipo:
+    </textarea>
+</div>
+
+<h3 id="codigoPlantilla"></h3>
+<h3 id="codigoPlantilla2"></h3>
+
+<div id="contenedor">
+    <div class="texto">
+        Historial Incidentes
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<script src="{{ url_for('static', filename='js/plantillas.js') }}"></script>
+
+{% endblock %}

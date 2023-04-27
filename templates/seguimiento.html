@@ -1,0 +1,33 @@
+{% extends './layout.html' %}
+
+{% block title %}{{ data.titulo }}{% endblock %}
+
+{% block body %}
+{% include './header.html' %}
+<div class="texto">
+    <p>Seguimientos</p>
+</div>
+<div class="texto-des">
+    <p>En este apartado puedes personalizar los correos de seguimiento o correos de Cierre para los casos que tengas en
+        backlog</p>
+</div>
+<form method="post">
+    <label for="plantilla">Plantilla:</label>
+    <select id="plantilla" name="plantilla">
+        {% for p in plantillas %}
+            <option value="{{ p[0] }}">{{ p[0] }}</option>
+        {% endfor %}
+    </select>
+    <br><br>
+    <label for="contenido">Contenido:</label>
+    <br>
+    <textarea id="contenido" name="contenido" rows="10" cols="50">{{ contenido }}</textarea>
+    <br><br>
+    <input type="submit" value="Mostrar contenido">
+    <button type="submit" name="accion" value="copiar">Copiar</button>
+</form>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<script src="{{ url_for('static', filename='js/seguimientos.js') }}"></script>
+
+{% endblock %}
