@@ -8,24 +8,24 @@
     <p>Seguimientos</p>
 </div>
 <div class="texto-des">
-    <p>En este apartado puedes personalizar los correos de seguimiento o correos de Cierre para los casos que tengas en
-        backlog</p>
+    <p>En este apartado puedes generar el texto para realizar seguimiento de los casos en Backlog.</p>
 </div>
-<form method="post">
-    <label for="plantilla">Plantilla:</label>
-    <select id="plantilla" name="plantilla">
-        {% for p in plantillas %}
-            <option value="{{ p[0] }}">{{ p[0] }}</option>
-        {% endfor %}
-    </select>
-    <br><br>
-    <label for="contenido">Contenido:</label>
-    <br>
-    <textarea id="contenido" name="contenido" rows="10" cols="50">{{ contenido }}</textarea>
-    <br><br>
-    <input type="submit" value="Mostrar contenido">
-    <button type="submit" name="accion" value="copiar">Copiar</button>
-</form>
+<div>
+    <form>
+        <div class="nom_completo">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" class="campo-descripcion" required>
+        </div>
+        <div class="num_incidente">
+            <label for="incidente">Numero de incidente:</label>
+            <input type="text" id="incidente" class="campo-descripcion2" required>
+        </div>
+        <button type="button" id="boton" style="display: none;" onclick="mostrar()">Generar texto</button>
+      </form>
+      
+      <p class="texto_generado" id="texto"></p>
+      
+</div>
 
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 <script src="{{ url_for('static', filename='js/seguimientos.js') }}"></script>
