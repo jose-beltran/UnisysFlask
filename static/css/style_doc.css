@@ -112,7 +112,7 @@ header {
     margin: 60px auto auto 675px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 10px;
     width: 450px;
     height: 60px;
@@ -178,4 +178,25 @@ header {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     font-size: 20px;
+}
+
+.codigoPlantilla{
+    font-family: 'Montserrat', sans-serif;
+    margin: 40px auto auto 450px;
+
+}
+table {
+    font-family: 'Montserrat', sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+}
+
+th {
+    background-color: #5eca9831;
+}
+th, td {
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
+    padding: 8px;
 }
