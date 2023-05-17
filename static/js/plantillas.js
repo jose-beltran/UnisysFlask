@@ -153,34 +153,36 @@ function mostrarCodigo() {
         case "qflow":
             codigoPlantilla.innerText = 'La plantilla dentro de USD es "TI_Qflow_General"';
             break;
-        case "usm":
-            codigoPlantilla.innerText = 'La plantilla dentro de USD es %usm%';
-            break;
         case "validadora":
-            codigoPlantilla.innerText = 'La plantila dentro de USD es "TI_Validadora_No imprime"';
+            codigoPlantilla.innerText = 'La plantilla dentro de USD es "TI_Validadora_No imprime"';
             break;
         case "wiw":
-            codigoPlantilla.innerText = 'La plantila dentro de USD es "TI_Who is Who_Config. Scanback"';
+            codigoPlantilla.innerText = 'La plantilla dentro de USD es "TI_Who is Who_Config. Scanback"';
+            break;
+        case "as400":
+            codigoPlantilla.innerText = 'La plantilla dentro de USD es "TI_As400_Mas de un dispositivo';
             break;
         default:
             codigoPlantilla.innerText = '';
     }
+}
 
+function mostrarCodigo2() {
     switch (selectPlantilla2.value) {
         case "consultaUsm":
-            codigoPlantilla.innerText = 'La plantila dentro de USD es "TI_USM_Consultar Pedido"';
+            codigoPlantilla.innerText = 'La plantilla dentro de USD es "TI_USM_Consultar Pedido"';
             break;
         case "crearUsm":
-            codigoPlantilla.innerText = 'La plantila dentro de USD es "TI_USM_Crear Pedido Portafolio"';
+            codigoPlantilla.innerText = 'La plantilla dentro de USD es "TI_USM_Crear Pedido Portafolio"';
             break;
         case "otroUsm":
-            codigoPlantilla.innerText = 'La plantila dentro de USD es "TI_USM_Crear Otros Pedidos"';
+            codigoPlantilla.innerText = 'La plantilla dentro de USD es "TI_USM_Crear Otros Pedidos"';
             break;
         case "fallaUsm":
-            codigoPlantilla.innerText = 'La plantila dentro de USD es "TI_USM_Falla"';
+            codigoPlantilla.innerText = 'La plantilla dentro de USD es "TI_USM_Falla"';
             break;
         case "rutaUsm":
-            codigoPlantilla.innerText = 'La plantila dentro de USD es "TI_USM_Rutas Compartidas"';
+            codigoPlantilla.innerText = 'La plantilla dentro de USD es "TI_USM_Rutas Compartidas"';
             break;
         case "winDisco":
             codigoPlantilla.innerText = 'La plantilla dentro de USD es TI_Windows_Lentitud';
@@ -220,15 +222,16 @@ function mostrarCodigo() {
     }
 }
 
-botonCopiar.addEventListener('click', function () {
+function guardarYBorrarTexto() {
     textPlantilla.select();
     document.execCommand('copy');
     alert('Texto copiado al portapapeles');
-})
+}
 
 let contadorCopias = 1;
-
 function guardarContenido() { //Funcion que muestra el incidente copiado 
+    textPlantilla.select();
+    document.execCommand('copy');
     const copiarPlantilla = document.querySelector('#textPlantilla');
     const contenido = copiarPlantilla.value;
     var ahora = new Date();
@@ -236,6 +239,12 @@ function guardarContenido() { //Funcion que muestra el incidente copiado
     const contenedor = document.createElement('div')
     contenedor.id = 'copiado-' + contadorCopias;
     document.querySelector('#contenedor').appendChild(contenedor);
+
+    // Borrar el contenido del textarea
+    document.getElementById('textPlantilla').value = "";
+
+    // Restaurar el texto predeterminado
+    textPlantilla.value = 'Incidente: Colaborador/a informa que \n• Error: \n• Usuario de red: \n• Equipo: ';
 
     // Obtener las horas y minutos de la hora actual
     var horas = ahora.getHours();
@@ -253,24 +262,23 @@ function guardarContenido() { //Funcion que muestra el incidente copiado
     // Formatear la hora en formato HH:mm AM/PM
     var horaFormateada = horas12 + ":" + minutos.toLocaleString('en-US', { minimumIntegerDigits: 2 }) + " " + amOpm;
 
-    const parrafo = document.createElement('p');
-    const titulo = document.createElement('h3');
-    titulo.innerHTML = 'Incidente #' + contadorCopias + ' creado a las ' + horaFormateada;
-    parrafo.innerHTML = contenido;
-    contenedor.appendChild(titulo);
-    contenedor.appendChild(parrafo);
+    // Obtener la referencia de la tabla
+    var tabla = document.getElementById('miTabla');
+
+    // Crear una nueva fila en la tabla
+    var fila = tabla.insertRow();
+
+    // Insertar las celdas con el contenido del textarea en la nueva fila
+    var celda1 = fila.insertCell();
+    var celda2 = fila.insertCell();
+    celda1.innerHTML = horaFormateada; // Puedes reemplazar con el valor deseado
+    celda2.innerHTML = contenido;
 
     contadorCopias++;
 }
-
-botonEliminar.addEventListener('click', () => {
-    document.execCommand('undo', false, null);
-});
 
 selectPlantilla.addEventListener('change', cambiarPlantilla);
 selectPlantilla.addEventListener('change', cambiarPlantilla2);
 selectPlantilla2.addEventListener('change', cambiarTexto);
 selectPlantilla.addEventListener('change', mostrarCodigo);
-selectPlantilla2.addEventListener('change', mostrarCodigo);
-
-
+selectPlantilla2.addEventListener('change', mostrarCodigo2);
