@@ -56,6 +56,209 @@ header {
     background-color: #26BF87;
 }
 
+.textDocumentar {
+    margin: 60px auto auto 675px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 10px;
+    width: 450px;
+    height: 60px;
+}
+
+.select {
+    width: 200px;
+    padding: 5px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 10px 0 auto 8px;
+}
+
+.img-copy {
+    margin-right: 10px;
+    border: 2px solid green;
+    border-radius: 15px;
+    padding: 5px;
+    width: 50px;
+    height: 45px;
+    margin-left: 300px;
+}
+
+.img-copy:hover {
+    background-color: rgb(153, 235, 145);
+    border-color: black;
+}
+
+.img-table__return {
+    margin-right: 10px;
+    border: 2px solid green;
+    border-radius: 15px;
+    padding: 5px;
+    width: 50px;
+    height: 45px;
+
+}
+
+.img-table__return:hover {
+    background-color: rgb(153, 235, 145);
+    border-color: black;
+}
+
+.div-botones {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.textarea {
+    margin: 0 auto;
+    border: 1px solid grey;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    height: 500px;
+    background-color: #5eca9831;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 20px;
+}
+
+.codigoPlantilla {
+    font-family: 'Montserrat', sans-serif;
+    margin: 40px auto auto 450px;
+
+}
+
+table {
+    font-family: 'Montserrat', sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+}
+
+th {
+    background-color: #5eca9831;
+    margin: 40px auto auto 450px;
+}
+
+th,
+td {
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+#contenedor {
+    display: none;
+}
+
+
+
+@media (max-width: 1440px) and (max-height: 900px) {
+    
+    .textDocumentar {
+        margin: 70px auto auto auto;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 10px;
+        width: 450px;
+        height: 60px;
+    }
+    
+    .select {
+        width: 200px;
+        padding: 5px;
+        height: 40px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        border-radius: 5px;
+        margin: 10px 0 auto 8px;
+    }
+    
+    .img-copy {
+        margin-right: 10px;
+        border: 2px solid green;
+        border-radius: 15px;
+        padding: 5px;
+        width: 50px;
+        height: 45px;
+        margin-left: 150px;
+    }
+    
+    .img-copy:hover {
+        background-color: rgb(153, 235, 145);
+        border-color: black;
+    }
+    
+    .img-table__return {
+        margin-right: 4px;
+        border: 2px solid green;
+        border-radius: 15px;
+        padding: 5px;
+        width: 50px;
+        height: 45px;
+    
+    }
+    
+    .img-table__return:hover {
+        background-color: rgb(153, 235, 145);
+        border-color: black;
+    }
+    
+    .div-botones {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        height: 50px;
+        margin: 0 auto;
+    }
+    
+    #textPlantilla {
+        margin: 30px auto auto 250px;
+        border: 1px solid grey;
+        align-items: center;
+        padding: 20px;
+        width: 70%;
+        height: 450px;
+        background-color: #5eca9831;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        font-size: 18px;
+    }
+    
+    .codigoPlantilla {
+        font-family: 'Montserrat', sans-serif;
+        margin: 40px auto auto 450px;
+    
+    }
+    
+    table {
+        font-family: 'Montserrat', sans-serif;
+        border-collapse: collapse;
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    th {
+        background-color: #5eca9831;
+        margin: 40px auto auto 450px;
+    }
+    
+    th,
+    td {
+        font-family: 'Montserrat', sans-serif;
+        border: 1px solid black;
+        padding: 8px;
+    }
+}
+
 @media(max-width:900px) {
     header {
         padding: 0px 30px;
@@ -106,97 +309,4 @@ header {
     .nav-bar ul li a {
         margin-bottom: 20px;
     }
-}
-
-.texto {
-    margin: 60px auto auto 675px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: 45px;
-    font-weight: 10px;
-    width: 450px;
-    height: 60px;
-}
-
-.select {
-    width: 200px;
-    padding: 5px;
-    height: 40px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    border-radius: 5px;
-    margin: 10px 0 auto 8px;
-}
-
-.img-copy {
-    margin-right: 10px;
-    border: 2px solid green;
-    border-radius: 15px;
-    padding: 5px;
-    width: 50px;
-    height: 45px;
-    margin-left: 300px;
-}
-
-.img-copy:hover {
-    background-color: rgb(153, 235, 145);
-    border-color: black;
-}
-
-.img-table__return {
-    margin-right: 10px;
-    border: 2px solid green;
-    border-radius: 15px;
-    padding: 5px;
-    width: 50px;
-    height: 45px;
-    
-}
-
-.img-table__return:hover {
-    background-color: rgb(153, 235, 145);
-    border-color: black;
-}
-
-.div-botones {
-    display: flex;
-    align-items: center;
-    width: 920px;
-    height: 50px;
-    margin: 60px 0 auto 25vw;
-}
-
-.textarea {
-    margin: 40px auto auto 450px;
-    border: 1px solid grey;
-    align-items: center;
-    padding: 20px;
-    width: 900px;
-    height: 500px;
-    background-color: #5eca9831;
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    font-size: 20px;
-}
-
-.codigoPlantilla{
-    font-family: 'Montserrat', sans-serif;
-    margin: 40px auto auto 450px;
-
-}
-table {
-    font-family: 'Montserrat', sans-serif;
-    border-collapse: collapse;
-    width: 50%;
-    margin: 0 auto;
-}
-
-th {
-    background-color: #5eca9831;
-}
-th, td {
-    font-family: 'Montserrat', sans-serif;
-    border: 1px solid black;
-    padding: 8px;
 }

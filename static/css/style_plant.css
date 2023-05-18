@@ -108,7 +108,7 @@ header {
     }
 }
 
-.texto {
+.textoPlantillas {
     margin: 60px auto auto 660px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -183,4 +183,25 @@ header {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     font-size: 20px;
+}
+
+@media (max-width: 1440px) and (max-height: 900px) {
+    .textoPlantillas {
+        margin: 70px auto auto auto;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 10px;
+        width: 450px;
+        height: 60px;
+    }
+    .texto-des {
+        margin: 40px auto auto 150px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        font-size: 25px;
+        font-weight: 30px;
+        width: auto;
+        height: 60px;
+    }
 }

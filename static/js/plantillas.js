@@ -275,6 +275,9 @@ function guardarContenido() { //Funcion que muestra el incidente copiado
     celda2.innerHTML = contenido;
 
     contadorCopias++;
+
+    var tabla = document.getElementById("contenedor");
+    tabla.style.display="block";
 }
 
 selectPlantilla.addEventListener('change', cambiarPlantilla);
