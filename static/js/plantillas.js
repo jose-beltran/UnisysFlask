@@ -45,7 +45,7 @@ function cambiarPlantilla() { //Funcion que añade texto segun el primer select 
             textPlantilla.value = "Incidente: El colaborador indicia que la Validadora no está imprimiendo.\nError: Validadora no imprime.\nNombre de Equipo: XXXX\nContacto: ";
             break;
         default:
-            textPlantilla.value = "Incidente: Colaborador/a informa que \n• Error: \n• Usuario de red: \n• Equipo: ";
+            textPlantilla.value = "Incidente: Colaborador/a informa que \n• Error: \n• Usuario de red: \n• Equipo: \n• Contacto: " ;
             break;
     }
 }
