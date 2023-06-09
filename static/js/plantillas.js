@@ -70,7 +70,7 @@ function cambiarTexto() { //Funcion que cambia segundo select en funcion del pri
             textPlantilla.value = "Incidente: El colaborador requiere conocer la ruta para solicitar permisos para acceder a Rutas Compartidas\n\nError: N/A \n\nRuta Compartida: \n\n*** Es importante documentar la ruta completa a la que el colaborador requiere acceso ***\n***Recuerda Direccionar al Colaborador al Sitio ¿Y como lo hago? para conocer el flujo por el que debe radicar su pedido***";
             break;
         case "basicos":
-            textPlantilla.value = "Incidente: Colaborador/a informa que \n• Error: \n• Usuario de red: \n• Equipo: ";
+            textPlantilla.value = "Incidente: Colaborador/a informa que \n• Error: \n• Usuario de red: \n• Equipo: \n• Contacto: ";
             break;
         case "sitio":
             textPlantilla.value = "• Código y/o Nombre de Edificio o Sucursal: \n• Horario de atención: \n• Ciudad: \n• Dirección: \n✆ Teléfono y/o Celular: \n\nIncidente: Colaborador/a informa que \n• Error: \n• Usuario de red: \n• Equipo: ";
@@ -85,7 +85,7 @@ function cambiarTexto() { //Funcion que cambia segundo select en funcion del pri
             textPlantilla.value = "Incidente: El colaborador informa que no puede acceder a Lotus Notes ya que no está tomando la contraseña que digita.\n\nError: Contraseña incorrecta (Asegúrese que utiliza las mayúsculas y minúsculas correctamente).\n\n• Usuario de Lotus: • Correo: XXXX@bancolombia.com.co\n• Contacto:";
             break;
         case "configLotus":
-            textPlantilla.value = "Incidente: El colaborador informa que requiere configurar el archivo ID para lograr acceder a Lotus.\n\nError: N/A\nEquipo:\nntacto:";
+            textPlantilla.value = "Incidente: El colaborador informa que requiere configurar el archivo ID para lograr acceder a Lotus.\n\nError: N/A\nEquipo:\Contacto:";
             break;
         case "multAtasco":
             textPlantilla.value = "Incidente: El colaborador informa que presenta inconvenientes con la multifuncional, las impresiones se están atascando en XXXX.\nIP de la multifuncional:\n\n***Recuerda Direccionar al Colaborador al Sitio ¿Y como lo hago? para conocer el procedimiento que debe seguir***";
