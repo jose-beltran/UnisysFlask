@@ -245,7 +245,6 @@ function guardarContenido() { //Funcion que muestra el incidente copiado
 
     // Restaurar el texto predeterminado
     textPlantilla.value = 'Incidente: Colaborador/a informa que \n• Error: \n• Usuario de red: \n• Equipo: \n• Contacto: ';
-    selectPlantilla.value = default;
 
     // Obtener las horas y minutos de la hora actual
     var horas = ahora.getHours();
