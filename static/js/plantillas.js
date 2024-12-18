@@ -6,7 +6,7 @@ const codigoPlantilla2 = document.getElementById('codigoPlantilla2');
 const botonCopiar = document.getElementById('copy');
 const botonEliminar = document.getElementById('undo')
 
-function cambiarPlantilla() { //Funcion que añade texto segun el primer select seleccionado
+function cambiarPlantilla() { 
     switch (selectPlantilla.value) {
         case "golf":
             textPlantilla.value = "Incidencia: El Colaborador indica que \nError: \n \n1. Nombre de la persona contacto: \n2. Teléfono y Celular del contacto: \n3. Código de Oficina para Sucursal: \n4. Datos de la persona que presenta el problema: \nNombre completo: \nUsuario de red: \nCódigo del usuario de GOLF SiFBranch: \nNombre de la estación de trabajo: \n5. Descripción del proceso que realiza, incluyendo el código rápido y nombre de la transacción: \n6. ¿Es el único afectado o hay más personas con la misma situación? ¿Cuántos?: \n\n • Id Chat/Llamada: \n • Articulo de conocimiento: ";
@@ -70,7 +70,7 @@ function cambiarTexto() { //Funcion que cambia segundo select en funcion del pri
             textPlantilla.value = "Incidente: El colaborador requiere conocer la ruta para solicitar permisos para acceder a Rutas Compartidas\n\nError: N/A \n\nRuta Compartida: \n\n*** Es importante documentar la ruta completa a la que el colaborador requiere acceso ***\n***Recuerda Direccionar al Colaborador al Sitio ¿Y como lo hago? para conocer el flujo por el que debe radicar su pedido*** \n\n • Id Chat/Llamada: \n • Articulo de conocimiento: ";
             break;
         case "basicos":
-            textPlantilla.value = "Incidente: Colaborador/a informa que \n• Error: \n• Usuario de red:  \n• Cedula: \n• Contacto: \n• Equipo: \n\n • Id Chat/Llamada: \n • Articulo de conocimiento: \n • Id Chat/Llamada: ";
+            textPlantilla.value = "Incidente: Colaborador/a informa que \n• Error: \n• Usuario de red:  \n• Cedula: \n• Contacto: \n• Equipo: \n\n • Id Chat/Llamada: \n • Articulo de conocimiento:";
             break;
         case "sitio":
             textPlantilla.value = "• Código y/o Nombre de Edificio o Sucursal: \n• Horario de atención: \n• Ciudad: \n• Dirección: \n✆ Teléfono y/o Celular: \n\nIncidente: Colaborador/a informa que \n• Error: \n• Usuario de red: \n• Cedula: \n• Contacto: \n• Equipo: \n\n• Id Chat/Llamada: \n• Articulo de conocimiento: ";
