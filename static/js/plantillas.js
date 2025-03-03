@@ -45,7 +45,7 @@ function cambiarPlantilla() {
             textPlantilla.value = "Incidente: El colaborador indicia que la Validadora no está imprimiendo.\nError: Validadora no imprime.\nNombre de Equipo: XXXX\nContacto: \n\n • Id Chat/Llamada: \n • Articulo de conocimiento: ";
             break;
         default:
-            textPlantilla.value = "Incidente: Colaborador/a informa que \n• Error: \n• Usuario de red: \n• Equipo: \n• Contacto: \n\n • Id Chat/Llamada: \n • Articulo de conocimiento: " ;
+            textPlantilla.value = "Incidente: Colaborador/a informa que \n• Error: \n• Usuario de red: \n• Equipo: \n• Contacto: \n\n • KB:  \n • Id Chat/Llamada: " ;
             break;
     }
 }
@@ -70,10 +70,10 @@ function cambiarTexto() { //Funcion que cambia segundo select en funcion del pri
             textPlantilla.value = "Incidente: El colaborador requiere conocer la ruta para solicitar permisos para acceder a Rutas Compartidas\n\nError: N/A \n\nRuta Compartida: \n\n*** Es importante documentar la ruta completa a la que el colaborador requiere acceso ***\n***Recuerda Direccionar al Colaborador al Sitio ¿Y como lo hago? para conocer el flujo por el que debe radicar su pedido*** \n\n • Id Chat/Llamada: \n • Articulo de conocimiento: ";
             break;
         case "basicos":
-            textPlantilla.value = "Incidente: Colaborador/a informa que \n• Error: \n• Usuario de red:  \n• Cedula: \n• Contacto: \n• Equipo: \n\n • Id Chat/Llamada: \n • Articulo de conocimiento:";
+            textPlantilla.value = "Incidente: Colaborador/a informa que \n• Error: \n• Usuario de red: \n• Equipo: \n• Contacto: \n\n • KB:  \n • Id Chat/Llamada: ";
             break;
         case "sitio":
-            textPlantilla.value = "• Código y/o Nombre de Edificio o Sucursal: \n• Horario de atención: \n• Ciudad: \n• Dirección: \n✆ Teléfono y/o Celular: \n\nIncidente: Colaborador/a informa que \n• Error: \n• Usuario de red: \n• Cedula: \n• Contacto: \n• Equipo: \n\n• Id Chat/Llamada: \n• Articulo de conocimiento: ";
+            textPlantilla.value = "• Código y/o Nombre de Edificio o Sucursal: \n• Horario de atención: \n• Ciudad: \n• Dirección: \n✆ Teléfono y/o Celular: \n\nIncidente: Colaborador/a informa que \n• Error: \n• Usuario de red: \n• Equipo: \n• Contacto: \n\n • KB:  \n • Id Chat/Llamada: ";
             break;
         case "winLentitud":
             textPlantilla.value = "Incidente: El colaborador informa que tiene lentitud en el equipo.\n\nError: Lentitud\nNombre del equipo:\nAplicación mayor Consumo:\n\nCR: \nLAPS:\nContacto:\n\n**** Consulta el Administrador de Tareas y Documenta la Aplicación que está generando el mayor consumo. \n\n• Id Chat/Llamada: \n• Articulo de conocimiento: ";
