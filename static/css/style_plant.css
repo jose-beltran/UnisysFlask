@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
     margin: 0;
     padding: 0%;
@@ -108,6 +110,12 @@ header {
     }
 }
 
+.title {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .textoPlantillas {
     margin: 60px auto auto 660px;
     font-family: 'Montserrat', sans-serif;
@@ -129,18 +137,20 @@ header {
 }
 
 .select {
-    width: 200px;
+    width: 215px;
     padding: 5px;
     height: 40px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     margin: 10px 0 auto 8px;
 }
 
 .img-copy {
     border: 2px solid green;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     padding: 5px;
     width: 50px;
     height: 45px;
@@ -155,6 +165,7 @@ header {
 .img-table__return {
     border: 2px solid green;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     padding: 5px;
     width: 50px;
     height: 45px;
@@ -179,7 +190,8 @@ header {
     width: 900px;
     height: 500px;
     background-color: #5eca9831;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     font-size: 20px;
